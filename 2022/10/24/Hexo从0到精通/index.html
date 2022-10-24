@@ -1,0 +1,239 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>benren YiYan | benren YiYan</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="前言：随着互联网浪潮的翻腾，国内外涌现出越来越多优秀的社交网站让用户分享信息更加便捷。然后，如果你是一个不甘寂寞的程序猿（媛），是否也想要搭建一个属于自己的个人网站，如果你曾经或者现在正有这样的想法，请跟随这篇文章发挥你的Geek精神，让你快速拥有自己的博客网站，写文章记录生活，享受这种从0到1的过程。下面正式从零开始搭建年轻人的第一个网站。一、安装node.js和git（百度自寻）首先下载nod">
+<meta property="og:type" content="article">
+<meta property="og:title" content="benren YiYan">
+<meta property="og:url" content="http://example.com/2022/10/24/Hexo%E4%BB%8E0%E5%88%B0%E7%B2%BE%E9%80%9A/index.html">
+<meta property="og:site_name" content="benren YiYan">
+<meta property="og:description" content="前言：随着互联网浪潮的翻腾，国内外涌现出越来越多优秀的社交网站让用户分享信息更加便捷。然后，如果你是一个不甘寂寞的程序猿（媛），是否也想要搭建一个属于自己的个人网站，如果你曾经或者现在正有这样的想法，请跟随这篇文章发挥你的Geek精神，让你快速拥有自己的博客网站，写文章记录生活，享受这种从0到1的过程。下面正式从零开始搭建年轻人的第一个网站。一、安装node.js和git（百度自寻）首先下载nod">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-10-24T01:39:21.176Z">
+<meta property="article:modified_time" content="2022-10-23T09:34:47.652Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2022/10/24/Hexo%E4%BB%8E0%E5%88%B0%E7%B2%BE%E9%80%9A/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'benren YiYan',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-10-23 17:34:47'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">benren YiYan</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">无题</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-10-24T01:39:21.176Z" title="发表于 2022-10-24 09:39:21">2022-10-24</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-10-23T09:34:47.652Z" title="更新于 2022-10-23 17:34:47">2022-10-23</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p><strong>前言：</strong><br />随着互联网浪潮的翻腾，国内外涌现出越来越多优秀的社交网站让用户分享信息更加便捷。然后，如果你是一个不甘寂寞的程序猿（媛），是否也想要搭建一个属于自己的个人网站，如果你曾经或者现在正有这样的想法，请跟随这篇文章发挥你的Geek精神，让你快速拥有自己的博客网站，写文章记录生活，享受这种从0到1的过程。<br />下面正式从零开始搭建年轻人的第一个网站。<br /><strong>一、安装node.js和git（百度自寻）</strong><br />首先下载node.js并安装，安装的时候一直点Nest就行<br /><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/33727686/1666422414513-ecd2b8c1-71cc-43a7-a25c-dc30662f58c9.jpeg#clientId=u054d1e84-07cb-4&crop=0&crop=0&crop=1&crop=1&from=ui&height=288&id=u740c036c&margin=%5Bobject%20Object%5D&name=875ec3cbcacbe505b66000359d1778b.jpg&originHeight=1245&originWidth=2056&originalType=binary&ratio=1&rotation=0&showTitle=true&size=194799&status=done&style=shadow&taskId=u38df0359-5d9a-44fc-8bb9-8c806639cf4&title=node.js&width=476" alt="875ec3cbcacbe505b66000359d1778b.jpg" title="node.js"><br /><strong>1、其次配置node.js的环境变量的具体步骤（以win11为例）如下：</strong></p>
+<ul>
+<li>设置- -&gt;系统- -&gt;系统信息- -&gt;高级系统设置- -&gt;高级- -&gt;环境变量</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/33727686/1666423990144-82683fd4-c2cf-4623-a67d-5b467515d405.png#clientId=u054d1e84-07cb-4&crop=0&crop=0&crop=1&crop=1&from=drop&height=325&id=u1993b105&margin=%5Bobject%20Object%5D&name=003e6a5b62afe6a989e7fabfc66bb48.png&originHeight=1072&originWidth=950&originalType=binary&ratio=1&rotation=0&showTitle=false&size=55473&status=done&style=shadow&taskId=ucccd3cb5-de37-4d43-abd0-60e2c6f4ed5&title=&width=288" alt="003e6a5b62afe6a989e7fabfc66bb48.png"></p>
+<ul>
+<li>复制nodejs目录路径(F:\Program Files\node-v8.11.1-win-x64)然后选中用户变量中的Path,单击编辑- -&gt;新建- -&gt;输入刚复制的地址 - -&gt;确认完成</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/33727686/1666424015883-42036420-5e43-457b-836c-6faa2dcbdddf.png#clientId=u054d1e84-07cb-4&crop=0&crop=0&crop=1&crop=1&from=drop&height=340&id=u1c1c370d&margin=%5Bobject%20Object%5D&name=20e4742ff725e21575680d7a25e3500.png&originHeight=1024&originWidth=1032&originalType=binary&ratio=1&rotation=0&showTitle=false&size=46115&status=done&style=shadow&taskId=u61e64e86-12ab-4632-af29-3f9edff2395&title=&width=343" alt="20e4742ff725e21575680d7a25e3500.png"></p>
+<ul>
+<li>重启cmd并输入（如若不重启将无法查到版本号）node -v,出现下图则说明配置成功:</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/33727686/1666424155254-17aa4ab0-3ee9-4d5e-9158-ad1984a2f8bc.png#clientId=u054d1e84-07cb-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=67&id=ufdcaa5f3&margin=%5Bobject%20Object%5D&name=image.png&originHeight=112&originWidth=356&originalType=binary&ratio=1&rotation=0&showTitle=false&size=5150&status=done&style=shadow&taskId=u1358fc21-7da9-4767-bd43-9632921b9a7&title=&width=212" alt="image.png"><br /><strong>2、下载git，一路Nest就行，不在这废话了</strong></p>
+<ul>
+<li>安装完之后cmd输入git –version检查有没有安装成功，出现下图则说明配置成功:</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/33727686/1666424627878-aec9830f-3dc1-4dc3-8f1c-b08b19c1db4e.png#clientId=u054d1e84-07cb-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=47&id=ucbdd1b33&margin=%5Bobject%20Object%5D&name=image.png&originHeight=94&originWidth=462&originalType=binary&ratio=1&rotation=0&showTitle=false&size=7875&status=done&style=shadow&taskId=u2faf0b89-3190-4a03-8f2d-8341323c5e8&title=&width=231" alt="image.png"><br /><strong>二、安装Hexo</strong><br /><strong>1、cmd命令行输入npm install hexo-cli -g回车进行安装</strong></p>
+<ul>
+<li>安装完成后，输入hexo -v检查是否安装成功，出现下图则说明安装成功:</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/33727686/1666425289045-3bad481c-330d-4a02-a1e1-42d3bb48f9b5.png#clientId=u054d1e84-07cb-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=285&id=u2f2ab582&margin=%5Bobject%20Object%5D&name=image.png&originHeight=681&originWidth=640&originalType=binary&ratio=1&rotation=0&showTitle=false&size=45042&status=done&style=shadow&taskId=ucefa4e44-288a-463a-8b30-b925efab069&title=&width=268" alt="image.png"><br /><strong>三、搭建GitHub仓库</strong><br /><strong>1、GitHub账号注册</strong></p>
+<ul>
+<li>进行登录,用户名尽量起个简短一点的</li>
+</ul>
+<p><strong>2、创建仓库</strong></p>
+<ul>
+<li>回到GitHub.com主页面，点击new新建仓库，仓库名必须是你的用户名加上.GitHub.io（例如我的用户名是yiyan20202020，就需要填yiyan20202020.GitHub.io）下面Add a README file记得打勾哦，最后点击下面绿色 Create repository 就完成啦</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/33727686/1666509300118-a456e4b2-8d7c-4f97-8d46-50df79bf2a21.png#clientId=u10280c88-f0b2-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=253&id=udc4ac025&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1312&originWidth=1508&originalType=binary&ratio=1&rotation=0&showTitle=false&size=614757&status=done&style=shadow&taskId=u9547f6c6-4bff-47e7-9fbd-fe124511d30&title=&width=291" alt="image.png"><br /><strong>四、生成SSH keys</strong><br /><strong>1、检查ssh</strong></p>
+<ul>
+<li>进入任何一个文件夹右键，选择Git Bath Here,输入ssh，显示以下内容，则为已经安装过了进入下一步</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/33727686/1666510060646-28b313af-f1df-4619-a00c-9abdb82120bd.png#clientId=u10280c88-f0b2-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=119&id=u5ef7d91d&margin=%5Bobject%20Object%5D&name=image.png&originHeight=258&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=31882&status=done&style=shadow&taskId=u62a8e763-1585-416a-a884-659e97e1968&title=&width=500" alt="image.png"><br /><strong>2、关联SSH keys</strong></p>
+<ul>
+<li>输入<code>ssh-keygen -t rsa -C &quot;你的邮箱&quot;</code>中间有空格别忘了，然后回车<strong>四次</strong></li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/33727686/1666510666001-b8bcf54d-4443-4f22-9ec0-7448229c8b4e.png#clientId=u10280c88-f0b2-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=219&id=u139f270a&margin=%5Bobject%20Object%5D&name=image.png&originHeight=429&originWidth=614&originalType=binary&ratio=1&rotation=0&showTitle=false&size=238350&status=done&style=shadow&taskId=uc3d0afdc-b42a-4eb7-9695-d706ccb8701&title=&width=314" alt="image.png"></p>
+<ul>
+<li>win+e打开文件管理器，找到c盘里的User，选择你的管理员&#x2F;用户文件夹，找到.ssh文件</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/33727686/1666510891886-a2db3288-ad67-4bf9-8034-8dd745896167.png#clientId=u10280c88-f0b2-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=245&id=u3c3e4c61&margin=%5Bobject%20Object%5D&name=image.png&originHeight=671&originWidth=852&originalType=binary&ratio=1&rotation=0&showTitle=false&size=451245&status=done&style=shadow&taskId=u655d5947-f35d-4fff-afa3-5d5d295e9d4&title=&width=311" alt="image.png"></p>
+<ul>
+<li>打开.ssh文件，并打开id_rsa.pub文件复制公钥（可以用文本打开）ctrl+a，ctrl+c</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/33727686/1666511069648-807a2432-280d-4938-96b6-e8cc003dfd3c.png#clientId=u10280c88-f0b2-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=63&id=u420794ca&margin=%5Bobject%20Object%5D&name=image.png&originHeight=148&originWidth=885&originalType=binary&ratio=1&rotation=0&showTitle=false&size=99791&status=done&style=shadow&taskId=u1706740d-b9ff-40b4-a150-3e32b2080dc&title=&width=377.5" alt="image.png"></p>
+<ul>
+<li>返回GitHub，点击右上角，打开设置，找到SSH and GPG keys，添加SSH key，title随便填，把刚才复制的公钥key粘贴到里面，然后点击Add SSH keys</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/33727686/1666511343970-4e401f42-b838-40dd-8f95-d85b34771211.png#clientId=u10280c88-f0b2-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=203&id=u730910f9&margin=%5Bobject%20Object%5D&name=image.png&originHeight=961&originWidth=2363&originalType=binary&ratio=1&rotation=0&showTitle=false&size=245436&status=done&style=shadow&taskId=u37566236-ae0c-49f7-bfcb-5d3aacf2da9&title=&width=500" alt="image.png"><img src="https://cdn.nlark.com/yuque/0/2022/png/33727686/1666511505254-fd4ea8d0-c5c2-4d42-8b22-71524ed81cec.png#clientId=u10280c88-f0b2-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=224&id=u69e6845d&margin=%5Bobject%20Object%5D&name=image.png&originHeight=970&originWidth=1585&originalType=binary&ratio=1&rotation=0&showTitle=false&size=87774&status=done&style=shadow&taskId=ufe647f6f-4420-437d-93bc-40cbd7d5718&title=&width=366" alt="image.png"></p>
+<ul>
+<li>返回刚刚的命令行输入<code>ssh -T git@GitHub.com</code>并输入yes然后回车，出现以下内容则说明绑定成功</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/33727686/1666511778597-1b045453-65d6-41e8-a605-f86d6776c245.png#clientId=u10280c88-f0b2-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=123&id=u4d7a9547&margin=%5Bobject%20Object%5D&name=image.png&originHeight=336&originWidth=1321&originalType=binary&ratio=1&rotation=0&showTitle=false&size=518055&status=done&style=shadow&taskId=u3645bc42-3d14-4ec0-93b2-c648599d0d9&title=&width=485.5" alt="image.png"><br /><strong>五、本地生成博客内容</strong><br /><strong>1、创建文件夹</strong></p>
+<ul>
+<li>在任何一个盘里创建一个文件夹，命名随便</li>
+<li>进入刚刚创建的文件夹右键点击Git Bash Here</li>
+</ul>
+<p><strong>2、初始化hexo</strong></p>
+<ul>
+<li>输入hexo init，回车初始化hexo，如果出现err错误就重新输入然后回车，直至安装成功，显示以下内容</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/33727686/1666515285482-cd03eac1-bb2f-4bd4-86a9-4e3148ed2bc8.png#clientId=u10280c88-f0b2-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=143&id=ub1ad7274&margin=%5Bobject%20Object%5D&name=image.png&originHeight=363&originWidth=1158&originalType=binary&ratio=1&rotation=0&showTitle=false&size=356951&status=done&style=shadow&taskId=u454fd4f4-f990-4978-afae-959bb8944ee&title=&width=455" alt="image.png"></p>
+<ul>
+<li>然后输入hexo s，本地生成页面，复制并在浏览器打开，hexo在本地搭建就算完成了</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/33727686/1666515386129-51476630-0f42-4300-9be5-2b32f2b5b977.png#clientId=u10280c88-f0b2-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=80&id=u8bfe98a1&margin=%5Bobject%20Object%5D&name=image.png&originHeight=217&originWidth=1174&originalType=binary&ratio=1&rotation=0&showTitle=false&size=215364&status=done&style=shadow&taskId=uff61f2f5-7305-4f5f-8119-210f6c6a80c&title=&width=435" alt="image.png"><br /><strong>六、把博客发布到互联网</strong><br /><strong>1、修改配置</strong></p>
+<ul>
+<li>打开你的仓库项目点击code，复制你的项目链接</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/33727686/1666515967767-3505c405-3dfa-456f-ab30-ef6e0dcc7be3.png#clientId=u10280c88-f0b2-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=231&id=ua9103b5d&margin=%5Bobject%20Object%5D&name=image.png&originHeight=810&originWidth=1848&originalType=binary&ratio=1&rotation=0&showTitle=false&size=216472&status=done&style=shadow&taskId=ub98a6f1d-85d2-4632-8dcf-69313f061b4&title=&width=526" alt="image.png"></p>
+<ul>
+<li>打开之前创建的文件夹，并打开_config.yml文件，修改最下面的配置，中间的链接粘贴你自己的仓库项目链接</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/33727686/1666515821795-fcdd91ab-0bc5-411c-8a6f-fe0ff5307fde.png#clientId=u10280c88-f0b2-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=87&id=uf1ad395a&margin=%5Bobject%20Object%5D&name=image.png&originHeight=212&originWidth=1229&originalType=binary&ratio=1&rotation=0&showTitle=false&size=11335&status=done&style=shadow&taskId=u79a77f44-8d2d-4169-81a2-c72cc71998f&title=&width=504.5" alt="image.png"></p>
+<ul>
+<li>改完之后ctrl+s保存</li>
+</ul>
+<p><strong>2、安装自动部署发布工具</strong></p>
+<ul>
+<li>在博客文件夹右键点击Git Bash Here,输入命令行<code>npm install hexo-deployer-git --save</code>回车安装</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/33727686/1666516499370-0301196a-3378-4f67-8196-ce937ead34d8.png#clientId=u10280c88-f0b2-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=136&id=u9a131cb6&margin=%5Bobject%20Object%5D&name=image.png&originHeight=277&originWidth=902&originalType=binary&ratio=1&rotation=0&showTitle=false&size=238418&status=done&style=shadow&taskId=u5320be5d-cd7d-4e68-bd57-6ef3fa7c2e3&title=&width=442" alt="image.png"><br /><strong>3、生成页面并上传</strong></p>
+<ul>
+<li>输入hexo g生成页面</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/33727686/1666516600782-c267d061-a647-4560-84d4-8bbf88bfed64.png#clientId=u10280c88-f0b2-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=82&id=u2fabb27d&margin=%5Bobject%20Object%5D&name=image.png&originHeight=163&originWidth=529&originalType=binary&ratio=1&rotation=0&showTitle=false&size=90770&status=done&style=shadow&taskId=u5f35af89-2634-45a1-80fb-3aa4f65a258&title=&width=264.5" alt="image.png"></p>
+<ul>
+<li>输入hexo d上传到GitHub仓库，期间可能会出现以下报错</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/jpeg/33727686/1666517002274-076e91dd-5508-42ee-9cb3-854826d43e37.jpeg#clientId=u10280c88-f0b2-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=215&id=uae7fb862&margin=%5Bobject%20Object%5D&name=830c3beb533f08ac14a52e949abce02.jpg&originHeight=559&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=223559&status=done&style=shadow&taskId=ub1bf36d9-f614-4396-917a-eef2b8b5a01&title=&width=416" alt="830c3beb533f08ac14a52e949abce02.jpg"></p>
+<ul>
+<li>遇到报错不要急，看到最前面两行没，把邮箱改成注册GitHub的邮箱，把name改成你的GitHub用户名，依次运行它，然后GitHub网页会跳转一个授权，授权一下就好了，重新输入hexo d显示以下内容为上传成功</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/33727686/1666517477705-b3e32ce0-3643-4d14-b873-2bdf0102d378.png#clientId=u10280c88-f0b2-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=208&id=u12bea1df&margin=%5Bobject%20Object%5D&name=image.png&originHeight=488&originWidth=935&originalType=binary&ratio=1&rotation=0&showTitle=false&size=503294&status=done&style=shadow&taskId=u99b1e25b-74eb-4add-b2fa-68ea3ad816f&title=&width=398.5" alt="image.png"></p>
+<ul>
+<li>上传完成之后就可以用github.io访问你的博客了</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">John Doe</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2022/10/24/Hexo%E4%BB%8E0%E5%88%B0%E7%B2%BE%E9%80%9A/">http://example.com/2022/10/24/Hexo%E4%BB%8E0%E5%88%B0%E7%B2%BE%E9%80%9A/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">benren YiYan</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2022/10/22/hello-world/"><img class="next-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Hello World</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/10/24/Hexo%E4%BB%8E0%E5%88%B0%E7%B2%BE%E9%80%9A/" title="无题"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2022/10/24/Hexo%E4%BB%8E0%E5%88%B0%E7%B2%BE%E9%80%9A/" title="无题">无题</a><time datetime="2022-10-24T01:39:21.176Z" title="发表于 2022-10-24 09:39:21">2022-10-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/22/hello-world/" title="Hello World"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2022/10/22/hello-world/" title="Hello World">Hello World</a><time datetime="2022-10-22T08:30:16.583Z" title="发表于 2022-10-22 16:30:16">2022-10-22</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By John Doe</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
